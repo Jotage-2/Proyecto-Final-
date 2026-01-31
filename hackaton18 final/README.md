@@ -62,7 +62,7 @@ npm run seed
 npm run dev
 ```
 
-El servidor estará corriendo en: **http://localhost:3000**
+El servidor estará corriendo en: **http://localhost:3001**
 
 ---
 
@@ -70,7 +70,7 @@ El servidor estará corriendo en: **http://localhost:3000**
 
 ### 1️⃣ Registro de Usuario
 ```http
-POST http://localhost:3000/api/auth/register
+POST http://localhost:3001/api/auth/register
 Content-Type: application/json
 
 {
@@ -82,7 +82,7 @@ Content-Type: application/json
 
 ### 2️⃣ Login
 ```http
-POST http://localhost:3000/api/auth/login
+POST http://localhost:3001/api/auth/login
 Content-Type: application/json
 
 {
@@ -101,14 +101,14 @@ GET http://localhost:3000/api/products
 
 **Con filtros**:
 ```http
-GET http://localhost:3000/api/products?category=Electrónica&search=laptop
+GET http://localhost:3001/api/products?category=Electrónica&search=laptop
 ```
 
 ---
 
 ### 4️⃣ Crear Producto (Solo Admin)
 ```http
-POST http://localhost:3000/api/products
+POST http://localhost:3001/api/products
 Authorization: Bearer TU_TOKEN_AQUI
 Content-Type: application/json
 
@@ -126,7 +126,7 @@ Content-Type: application/json
 
 ### 5️⃣ Aplicar Cupón
 ```http
-POST http://localhost:3000/api/cart/apply-coupon
+POST http://localhost:3001/api/cart/apply-coupon
 Content-Type: application/json
 
 {
@@ -139,7 +139,7 @@ Content-Type: application/json
 
 ### 6️⃣ Checkout
 ```http
-POST http://localhost:3000/api/orders/checkout
+POST http://localhost:3001/api/orders/checkout
 Authorization: Bearer TU_TOKEN_AQUI
 Content-Type: application/json
 
@@ -161,7 +161,7 @@ Content-Type: application/json
 
 ### 7️⃣ Ver Mis Órdenes
 ```http
-GET http://localhost:3000/api/orders/me
+GET http://localhost:3001/api/orders/me
 Authorization: Bearer TU_TOKEN_AQUI
 ```
 
